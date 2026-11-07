@@ -1,0 +1,116 @@
+{
+ "note": "Numbers of the ORIGINAL notebook run (git commit b88fe6a), i.e. the numbers quoted in the project brief. Regenerate with: git show b88fe6a:06_Echo/echo_growth_analysis.ipynb > /tmp/nb.ipynb && python export_from_notebook.py --notebook /tmp/nb.ipynb --out /tmp/o.json",
+ "scenarios": {
+  "Pessimistic": {
+   "WAU_end": 10587.19139020509,
+   "revenue_12m": 47178.19359738074,
+   "hours_avg": 10995.46624205203,
+   "paid_spend_12m": 23603.68568491792
+  },
+  "Base": {
+   "WAU_end": 13780.632453015915,
+   "revenue_12m": 56177.97393183991,
+   "hours_avg": 14004.480681014222,
+   "paid_spend_12m": 23603.68568491792
+  },
+  "Optimistic": {
+   "WAU_end": 14200.204481199286,
+   "revenue_12m": 57117.71067436862,
+   "hours_avg": 14238.745538482208,
+   "paid_spend_12m": 23603.68568491792
+  }
+ },
+ "CALIB": 0.9679735048225184,
+ "whatif": {
+  "Base": {
+   "WAU June 2027": 13780.632453015915,
+   "12-month revenue": 56177.97393183989,
+   "12-month paid spend": 23603.68568491792,
+   "revenue - spend": 32574.288246921973,
+   "delta (revenue - spend) vs base": 0.0
+  },
+  "Aggressive push, new users only": {
+   "WAU June 2027": 11905.291309832035,
+   "12-month revenue": 54823.838855462316,
+   "12-month paid spend": 23603.68568491792,
+   "revenue - spend": 31220.153170544396,
+   "delta (revenue - spend) vs base": -1354.1350763775772
+  },
+  "Aggressive push, existing users erode 26 weeks": {
+   "WAU June 2027": 10587.19139020509,
+   "12-month revenue": 47178.19359738074,
+   "12-month paid spend": 23603.68568491792,
+   "revenue - spend": 23574.50791246282,
+   "delta (revenue - spend) vs base": -8999.780334459152
+  },
+  "Aggressive push, existing users erode 52 weeks": {
+   "WAU June 2027": 9835.613058347117,
+   "12-month revenue": 45859.883474950984,
+   "12-month paid spend": 23603.68568491792,
+   "revenue - spend": 22256.197790033064,
+   "delta (revenue - spend) vs base": -10318.09045688891
+  },
+  "Activation +5 pp": {
+   "WAU June 2027": 13990.418467107598,
+   "12-month revenue": 56647.842303104255,
+   "12-month paid spend": 23603.68568491792,
+   "revenue - spend": 33044.15661818633,
+   "delta (revenue - spend) vs base": 469.86837126435785
+  },
+  "Activation +10 pp": {
+   "WAU June 2027": 14200.204481199286,
+   "12-month revenue": 57117.71067436862,
+   "12-month paid spend": 23603.68568491792,
+   "revenue - spend": 33514.0249894507,
+   "delta (revenue - spend) vs base": 939.7367425287266
+  },
+  "Paid social spend x 1.5": {
+   "WAU June 2027": 15224.010272017102,
+   "12-month revenue": 61127.084636976695,
+   "12-month paid spend": 35405.528527376875,
+   "revenue - spend": 25721.55610959982,
+   "delta (revenue - spend) vs base": -6852.732137322153
+  },
+  "Paid social stopped": {
+   "WAU June 2027": 10893.876815013538,
+   "12-month revenue": 46279.75252156634,
+   "12-month paid spend": 0.0,
+   "revenue - spend": 46279.75252156634,
+   "delta (revenue - spend) vs base": 13705.464274644368
+  }
+ },
+ "ltv_seg": {
+  "organic_store": {
+   "not activated": 2.746982304297455,
+   "activated (>= 3 shows)": 4.602490405786201,
+   "value of activating one user": 1.8555081014887458,
+   "activated LTV / paid CAC": 1.766546062488812
+  },
+  "paid_social": {
+   "not activated": 1.5880485916111529,
+   "activated (>= 3 shows)": 3.3338224326152206,
+   "value of activating one user": 1.7457738410040677,
+   "activated LTV / paid CAC": 1.27960090562476
+  },
+  "podcast_cross_promo": {
+   "not activated": 3.3139125465123946,
+   "activated (>= 3 shows)": 5.421020385570856,
+   "value of activating one user": 2.107107839058461,
+   "activated LTV / paid CAC": 2.0807174752091453
+  }
+ },
+ "backtest": {
+  "A: forecast signups": {
+   "MAPE WAU": 0.008625985844390793,
+   "MAPE revenue": 0.013173364317562998,
+   "bias WAU, last week": 0.008193782674060568,
+   "bias 26-week revenue": -0.004134733758808573
+  },
+  "B: actual signups": {
+   "MAPE WAU": 0.02069195250032743,
+   "MAPE revenue": 0.017337971084296754,
+   "bias WAU, last week": 0.027805614933091194,
+   "bias 26-week revenue": 0.008597605894618665
+  }
+ }
+}
